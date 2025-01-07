@@ -1,0 +1,25 @@
+[package]
+name = "agent-client-instagram"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+base64 = "0.21"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+rsa = "0.9.7"
+rand = "0.8"
+aes-gcm = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+regex = "1.10.2"
+indexmap = { version = "2.7.0", features = ["serde"] }
+totp-rs = "5.4"
+base32 = "0.4"
+hmac = "0.12"
+sha2 = "0.10"
+chrono = "0.4"
+image = "0.24"
+dotenv = "0.15"
+tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
